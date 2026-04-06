@@ -703,9 +703,25 @@ export default function GSADashboard() {
     <div style={{fontFamily:"'Segoe UI',-apple-system,sans-serif",background:C.bg,minHeight:"100vh",color:C.txt}}>
       <div style={{background:"linear-gradient(135deg,#0f172a,#1e3a5f)",padding:"16px 16px 10px",color:"#fff"}}>
         <div style={{display:"flex",alignItems:"center",gap:10}}>
-          <img src={LOGO} alt="GSA Group" style={{height:32,width:"auto",filter:"brightness(0) invert(1)"}}/>
+         <img
+  src={LOGO}
+  alt="GSA Group"
+  style={{
+    height: 40,
+    width: "auto",
+    objectFit: "contain",
+    borderRadius: 10   // 👈 arrondi ici
+  }}
+/>
           <div>
-            <h1 style={{fontSize:16,fontWeight:700,margin:0}}>GSA Group — Présentation Finale</h1>
+            <h1 style={{
+  fontSize:16,
+  fontWeight:700,
+  margin:0,
+  color: "#ffffff"   // 👈 ici
+}}>
+  GSA Group — Présentation Finale
+</h1>
             <p style={{fontSize:10,margin:0,opacity:.7}}>MNGT 10430 — GlobStrat P0→P6</p>
           </div>
         </div>
